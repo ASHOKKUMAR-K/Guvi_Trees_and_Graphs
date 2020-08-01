@@ -115,7 +115,7 @@ print(bst.inorder_traversal(bst.root.left), bst.inorder_traversal(bst.root.right
 10
 6 2 9 1 3 4 7 8 10 12
 ### Output
-46
+10 46
 
 
 ## Test Case 3 :
