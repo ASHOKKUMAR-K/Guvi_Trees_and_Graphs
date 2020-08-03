@@ -1,0 +1,71 @@
+# Question - Recurring Decimals to Fractions
+You are given a number(N) with decimal point with non-terminating but recurring. Convert the decimal to fraction and print numerator and denominator. If not possible, print -1.
+
+# Contraints
+0 < N < 100000
+
+# Input Description :
+A Number with decimal point.
+
+# Output Description :
+Numerator and Denominator of fractions.
+
+# Explanation :
+Let N = 1.555555555......., then 10*N = 15.555555555......
+10N - N = (15.5555555.... - 1.5555555....)
+9N = 14
+N = 14 / 9
+
+# Hints :
+Recurring Decimal Number to fractions.
+
+# Solution :
+```python
+
+N = float(input())
+dec = str(N - (N // 1))
+pow = 1
+for i in range(3, len(dec)):
+    if dec[2] == dec[i]:
+        break
+    pow += 1
+num = int((10**pow)*(N) - N) + 1
+den = (10**pow) - 1
+print(num, den)
+
+```
+
+# TestCases:
+## Test Case 1:
+### Input:
+1.555555555555555
+### Output:
+14 9
+
+
+## Test Case 2:
+### Input:
+89.45636363636363
+### Output:
+885618 9900
+
+
+## Test Case 3:
+### Input:
+0.65656565656565
+### Output:
+65 99
+
+
+## Test Case 4:
+### Input:
+0.85858585858585
+### Output:
+85 99
+
+
+## Test Case 5:
+### Input:
+0.763763763763763763
+### Output:
+763 / 999
