@@ -7,9 +7,9 @@ You are given values for Binary Search Tree. Print the Inorder Predecessor of th
 1 <= node <= 1000
 
 # Input Description:
-Number of nodes in BST
-BST nodes values
-A Node data to find predecessor
+First line consists of a single number N representing number of nodes.
+Second line consists of an array of N node's values.
+Third line consists of a single number denoting a node data to find predecessor
 
 # Output Description:
 In-order Predecessor data of given node.
