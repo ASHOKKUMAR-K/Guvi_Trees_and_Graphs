@@ -31,6 +31,7 @@ def find_next_square_number(num):
     else:
         return int(num_sqrt) + 1
 
+
 N =int(input())
 binary_form = []
 while N != 0:
@@ -38,7 +39,7 @@ while N != 0:
     N //= 2
 matrix_size = find_next_square_number(len(binary_form))
 bin_mat = [[0 for _ in range(matrix_size)] for _ in range(matrix_size)]
-  
+
 for i in range(matrix_size - 1, -1, -1):
     for j in range(matrix_size - 1, -1, -1):
         bin_mat[i][j] = binary_form.pop(0)
@@ -46,9 +47,12 @@ for i in range(matrix_size - 1, -1, -1):
             break
     if len(binary_form) == 0:
         break
-
+zeros_count = 0
 for row in bin_mat:
-    print(*row)
+    for cell in row:
+        if cell == 0:
+            zeros_count += 1
+print(zeros_count)
 
 ```
 
