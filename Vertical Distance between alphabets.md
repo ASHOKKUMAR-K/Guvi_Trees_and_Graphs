@@ -1,5 +1,5 @@
 # Question - Vertical Distance between alphabets.
-Consider a 5x5 Alpabet Matrix. Find the horizontal distance between two alphabets.
+Consider a 5x5 Alpabet Matrix. Find the vertical distance between two alphabets.
 A B C D E
 F G H I J
 K L M N O
