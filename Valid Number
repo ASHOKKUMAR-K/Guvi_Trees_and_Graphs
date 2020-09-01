@@ -1,0 +1,68 @@
+# Question - Valid Number
+Validate if a given string is numeric. Return 0 / 1 ( 0 for false, 1 for true ) for this problem
+
+Constraints:
+1 <= N <= 100
+
+
+Solution:
+
+```python
+
+def start_end(n1, n2):
+  pass
+
+```
+
+Tags:
+Adobe
+
+# Input Description:
+First line consists of a single string S.
+
+# Output Description:
+Return 0 / 1 ( 0 for false, 1 for true ) for this problem.
+
+# Explanation:
+"0" => true
+" 0.1 " => true
+"abc" => false
+
+# Hints:
+"1 a" => false
+"2e10" => true
+
+
+# Test Cases :
+## Test Case 1 :
+### Input
+3
+### Output
+1
+
+
+## Test Case 2 :
+### Input
+0.5423
+### Output
+1
+
+
+## Test Case 3 :
+### Input
+1e8876875
+### Output
+1
+
+## Test Case 4 :
+### Input
+1bg
+### Output
+0
+
+
+## Test Case 5 :
+### Input
+1_1
+### Output
+0
